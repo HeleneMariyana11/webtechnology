@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    
+</head>
+<body >
+    <h1>Clickable Image Map Example</h1>
+    <p>Click on different areas of the image below:</p>
+    
+    <!-- Image with map -->
+    <img src="software1.jpg"alt="Example Image Map" usemap="#image-map" width="600">
+
+    <!-- Image map definition -->
+    <map name="image-map">
+        <!-- Define clickable areas with shape, coordinates, and href -->
+        <area shape="rect" coords="328,236,394,302" alt="Excel" href="https://www.freepik.com/free-photos-vectors/microsoft-excel">
+        <area shape="circle" coords="52,341,39" alt="chromewebstore" href="https://chromewebstore.google.com/?pli=1">
+        <area shape="poly" coords="258,185,257,202,271,210,277,225,287,210,294,226,301,212,314,200,314,187,299,182,295,166,275,162" alt="Android" href="https://developer.android.com/studio">
+        <area  shape="poly" coords="176,366,222,368,221,399,199,400,179,400,118,395,119,376" alt="gmail" href="https://support.google.com/mail/answer/56256?hl=en">
+        <area shape="rect" coords="141,166,225,244" alt="word" href="https://en.wikipedia.org/wiki/Microsoft_Word">
+        <area shape="poly" coords="222,257,263,264,270,319,245,327,194,308" alt="Notepad" href="https://notepad-plus-plus.org/">
+        <area  shape="poly" coords="63,159,99,167,123,190,121,220,109,243,87,257,57,254,37,239,18,231,21,188" alt="powerpoint" href="https://www.geeksforgeeks.org/introduction-to-microsoft-powerpoint/">
+        <area shape="poly" coords="479,230,514,230,541,231,540,181,503,178,479,174" alt="Files" href="https://www.computerhope.com/jargon/f/folder.htm">
+        <area  shape="poly" coords="137,287,113,296,114,312,120,326,139,336,161,328,158,298,157,277" alt="apple ios" href="https://www.investopedia.com/terms/a/apple-ios.asp">
+        <area shape="poly" coords="431,295,446,304,447,320,446,335,430,344,403,336,403,318,401,301" alt="Mac os" href="https://en.wikipedia.org/wiki/MacOS">
+    </map>
+
+    <p>Each area links to a different page.</p>
+</body>
+</html>
