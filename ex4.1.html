@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Information Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 style="color:black">Software Information Form</h1>
+        <form id="software-form">
+            <div class="form-group mb-3">
+                <label for="software-name">Software Name:</label>
+                <input type="text" id="software-name" name="software-name" class="form-control" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="version">Version:</label>
+                <input type="text" id="version" name="version" class="form-control" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="os">Supported Operating Systems:</label><br>
+                <input type="checkbox" name="os" value="Windows"> Windows
+                <input type="checkbox" name="os" value="MacOS"> MacOS
+                <input type="checkbox" name="os" value="Linux"> Linux
+                <input type="checkbox" name="os" value="Android"> Android
+                <input type="checkbox" name="os" value="iOS"> iOS
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="platform">Platform:</label>
+                <select id="platform" name="platform" class="form-control" required>
+                    <option value="">Select...</option>
+                    <option value="web">Web</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="embedded">Embedded</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="target-audience">Target Audience:</label>
+                <select id="target-audience" name="target-audience" class="form-control">
+                    <option value="">Select...</option>
+                    <option value="Enterprise">Enterprise</option>
+                    <option value="Small Businesses">Small Businesses</option>
+                    <option value="Developers">Developers</option>
+                    <option value="End Users">End Users</option>
+                    <option value="Educational Institutions">Educational Institutions</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="languages">Programming Languages Used:</label>
+                <input type="text" id="languages" name="languages" class="form-control" placeholder="E.g., Java, Python, C++" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="features">Supported Features:</label><br>
+                <input type="checkbox" name="features" value="Multithreading"> Multithreading
+                <input type="checkbox" name="features" value="Cloud Storage"> Cloud Storage
+                <input type="checkbox" name="features" value="Cross-Platform"> Cross-Platform
+                <input type="checkbox" name="features" value="AI Integration"> AI Integration
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="user-rating">User Rating (1-5):</label><br>
+                <input type="range" id="user-rating" name="user-rating" min="1" max="5">
+                <span id="rating-value">3</span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="beta-version">Is there a Beta Version available?</label><br>
+                <input type="radio" name="beta-version" value="Yes"> Yes
+                <input type="radio" name="beta-version" value="No"> No
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="download-size">Download Size (MB/GB):</label>
+                <input type="text" id="download-size" name="download-size" class="form-control" placeholder="E.g., 500MB or 1.2GB">
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="system-requirements">Minimum System Requirements:</label>
+                <textarea id="system-requirements" name="system-requirements" class="form-control" rows="4" placeholder="E.g., 4GB RAM, Intel i5 processor, 10GB storage" required></textarea>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="release-notes">Release Notes:</label>
+                <textarea id="release-notes" name="release-notes" class="form-control" rows="4" placeholder="Provide important release updates or changes"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
