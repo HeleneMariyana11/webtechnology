@@ -7,14 +7,14 @@
 
     <!-- Servlet Definition -->
     <servlet>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <servlet-class>HelloWorldServlet</servlet-class>
+        <servlet-name>servletcalc</servlet-name>
+        <servlet-class>servletcalc</servlet-class>
     </servlet>
 
     <!-- Servlet Mapping -->
     <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>servletcalc</servlet-name>
+        <url-pattern>/calculation</url-pattern>
     </servlet-mapping>
 
 </web-app>
